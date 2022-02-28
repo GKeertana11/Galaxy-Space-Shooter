@@ -32,12 +32,12 @@ public class PlayerMovement : MonoBehaviour
 
         if (transform.position.x > 8.0f)
         {
-            transform.position = new Vector3(8.2f,transform.position.y,  0);
+            transform.position = new Vector3(8.0f,transform.position.y,  0);
 
         }
         else if (transform.position.x < -8.0f)
         {
-            transform.position = new Vector3(-8.2f, transform.position.y, 0);
+            transform.position = new Vector3(-8.0f, transform.position.y, 0);
 
         }
 
