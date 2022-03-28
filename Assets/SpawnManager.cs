@@ -6,6 +6,7 @@ public class SpawnManager : MonoBehaviour
 {
     public GameObject astroidPrefab;
     float time;
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -17,11 +18,12 @@ public class SpawnManager : MonoBehaviour
     {
 
         time =time+ Time.deltaTime;
-        if (time > 3.0f)
+        if (time >=3.0f)
         {
-            transform.position = new Vector3(Random.Range(8.03f, -8.03f), 4.09f, 0);
+            transform.position = new Vector3(8.02f, Random.Range(-4.09f, 4.09f),  0);
 
             Instantiate(astroidPrefab, transform.position, Quaternion.identity);
+           
             time = 0f;
         }
     }
